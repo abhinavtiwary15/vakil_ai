@@ -1,3 +1,11 @@
+---
+title: Vakil AI
+emoji: ⚖️
+colorFrom: blue
+colorTo: yellow
+sdk: static
+pinned: false
+---
 # VakilAI — Your Business Lawyer at ₹999/month
 
 AI-powered legal assistant for India's 73 million MSMEs.
