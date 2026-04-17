@@ -1,0 +1,220 @@
+class AppStrings {
+  // Localized string helper
+  static String get(String key, String lang) {
+    return _strings[key]?[lang] ?? _strings[key]?['en'] ?? key;
+  }
+
+  static const Map<String, Map<String, String>> _strings = {
+    // App General
+    'app_name': {'hi': 'VakilAI', 'en': 'VakilAI'},
+    'tagline': {'hi': 'आपका बिज़नेस वकील', 'en': 'Your Business Lawyer'},
+    'get_started': {'hi': 'शुरू करें', 'en': 'Get Started'},
+    'continue_btn': {'hi': 'आगे बढ़ें', 'en': 'Continue'},
+    'save': {'hi': 'सेव करें', 'en': 'Save'},
+    'cancel': {'hi': 'रद्द करें', 'en': 'Cancel'},
+    'submit': {'hi': 'जमा करें', 'en': 'Submit'},
+    'back': {'hi': 'वापस', 'en': 'Back'},
+    'next': {'hi': 'अगला', 'en': 'Next'},
+    'done': {'hi': 'हो गया', 'en': 'Done'},
+    'skip': {'hi': 'छोड़ें', 'en': 'Skip'},
+    'loading': {'hi': 'लोड हो रहा है...', 'en': 'Loading...'},
+    'error_occurred': {'hi': 'कुछ गलत हुआ', 'en': 'Something went wrong'},
+    'retry': {'hi': 'फिर कोशिश करें', 'en': 'Retry'},
+    'offline_mode': {'hi': 'ऑफलाइन मोड', 'en': 'Offline Mode'},
+
+    // Onboarding
+    'onboarding_1_title': {'hi': 'नोटिस आए तो क्या करें?', 'en': 'What to do when notices arrive?'},
+    'onboarding_1_subtitle': {'hi': 'कानूनी नोटिस डरावने नहीं होने चाहिए', 'en': 'Legal notices don\'t have to be scary'},
+    'onboarding_2_title': {'hi': 'हर नोटिस का जवाब सरल भाषा में', 'en': 'Every notice explained in simple language'},
+    'onboarding_2_subtitle': {'hi': 'कोई भी नोटिस अपलोड करें। सेकंड में हिंदी में समझ पाएं।', 'en': 'Upload any notice. Get plain Hindi explanation in seconds.'},
+    'onboarding_3_title': {'hi': '₹999/महीना में पूरा कानूनी सहारा', 'en': 'Complete legal support at ₹999/month'},
+    'onboarding_3_subtitle': {'hi': 'हर साल ₹10,000+ जुर्माने से बचें', 'en': 'Save ₹10,000+ in penalties every year'},
+
+    // Auth
+    'enter_phone': {'hi': 'मोबाइल नंबर दर्ज करें', 'en': 'Enter mobile number'},
+    'send_otp': {'hi': 'OTP भेजें', 'en': 'Send OTP'},
+    'enter_otp': {'hi': 'OTP दर्ज करें', 'en': 'Enter OTP'},
+    'verify_otp': {'hi': 'OTP वेरिफाई करें', 'en': 'Verify OTP'},
+    'resend_otp': {'hi': 'OTP दोबारा भेजें', 'en': 'Resend OTP'},
+    'google_signin': {'hi': 'Google से लॉगिन करें', 'en': 'Continue with Google'},
+    'phone_hint': {'hi': '10 अंकों का मोबाइल नंबर', 'en': '10-digit mobile number'},
+
+    // Business Setup
+    'business_setup_title': {'hi': 'बिज़नेस प्रोफाइल बनाएं', 'en': 'Create Business Profile'},
+    'step_n_of_m': {'hi': 'स्टेप {n} of {m}', 'en': 'Step {n} of {m}'},
+    'business_identity': {'hi': 'बिज़नेस की जानकारी', 'en': 'Business Identity'},
+    'business_name': {'hi': 'बिज़नेस का नाम', 'en': 'Business Name'},
+    'business_name_hint': {'hi': 'जैसे: Ramesh Enterprises', 'en': 'e.g. Ramesh Enterprises'},
+    'business_type': {'hi': 'बिज़नेस का प्रकार', 'en': 'Business Type'},
+    'industry': {'hi': 'उद्योग / क्षेत्र', 'en': 'Industry / Sector'},
+    'city': {'hi': 'शहर', 'en': 'City'},
+    'city_hint': {'hi': 'जैसे: जयपुर', 'en': 'e.g. Jaipur'},
+    'state': {'hi': 'राज्य', 'en': 'State'},
+    'registrations_title': {'hi': 'पंजीकरण विवरण', 'en': 'Registrations & Licenses'},
+    'add_later': {'hi': 'इन्हें बाद में भी जोड़ सकते हैं', 'en': 'You can add these later'},
+    'gstin_label': {'hi': 'GST पंजीकरण (GSTIN)', 'en': 'GST Registration (GSTIN)'},
+    'udyam_label': {'hi': 'उद्यम पंजीकरण (MSME)', 'en': 'Udyam Registration (MSME)'},
+    'pan_label': {'hi': 'पैन नंबर (Business PAN)', 'en': 'Business PAN'},
+    'fssai_label': {'hi': 'FSSAI लाइसेंस (Food)', 'en': 'FSSAI License (Food)'},
+    'esic_label': {'hi': 'ESIC पंजीकरण (ESI)', 'en': 'ESIC Registration (ESI)'},
+    'epfo_label': {'hi': 'EPFO पंजीकरण (PF)', 'en': 'EPFO Registration (PF)'},
+    'shop_act_label': {'hi': 'शॉप एंड एस्टाब्लिशमेंट एक्ट', 'en': 'Shop & Establishment Act'},
+    'trade_license_label': {'hi': 'व्यापार लाइसेंस (Trade License)', 'en': 'Trade License'},
+    'business_scale': {'hi': 'बिज़नेस का आकार', 'en': 'Business Scale'},
+    'business_scale_subtitle': {'hi': 'आकार और प्राथमिकताएं', 'en': 'Scale & Preferences'},
+    'num_employees': {'hi': 'कर्मचारियों की संख्या', 'en': 'Number of Employees'},
+    'annual_turnover': {'hi': 'सालाना टर्नओवर', 'en': 'Annual Turnover'},
+    'turnover_lt_20l': {'hi': '₹20 लाख से कम', 'en': 'Under ₹20L'},
+    'turnover_20l_75l': {'hi': '₹20 लाख - ₹75 लाख', 'en': '₹20L - ₹75L'},
+    'turnover_75l_2cr': {'hi': '₹75 लाख - ₹2 करोड़', 'en': '₹75L - ₹2Cr'},
+    'turnover_gt_2cr': {'hi': '₹2 करोड़ से अधिक', 'en': 'Above ₹2Cr'},
+    'emp_lt_5': {'hi': '5 से कम', 'en': 'Less than 5'},
+    'emp_5_20': {'hi': '5-20 कर्मचारी', 'en': '5-20 Employees'},
+    'emp_20_100': {'hi': '20-100 कर्मचारी', 'en': '20-100 Employees'},
+    'emp_gt_100': {'hi': '100 से अधिक', 'en': 'More than 100'},
+    'language_pref': {'hi': 'भाषा प्राथमिकता', 'en': 'Language Preference'},
+    'save_profile': {'hi': 'प्रोफाइल सेव करें', 'en': 'Save Profile'},
+
+    // Dropdown Options / Categories (Mapped from ComplianceData)
+    'proprietorship': {'hi': 'प्रोपराइटरशिप', 'en': 'Proprietorship'},
+    'partnership': {'hi': 'साझेदारी (Partnership)', 'en': 'Partnership'},
+    'llp': {'hi': 'LLP', 'en': 'LLP'},
+    'pvt_ltd': {'hi': 'प्राइवेट लिमिटेड (Pvt Ltd)', 'en': 'Private Limited'},
+    'opc': {'hi': 'OPC (एक व्यक्ति कंपनी)', 'en': 'OPC (One Person Company)'},
+    
+    'food_beverage': {'hi': 'खाद्य और पेय (F&B)', 'en': 'Food & Beverage'},
+    'manufacturing': {'hi': 'विनिर्माण (Manufacturing)', 'en': 'Manufacturing'},
+    'trading': {'hi': 'व्यापार (Trading)', 'en': 'Trading'},
+    'services': {'hi': 'सेवाएं (Services)', 'en': 'Services'},
+    'retail': {'hi': 'रिटेल (Retail)', 'en': 'Retail'},
+    'construction': {'hi': 'निर्माण (Construction)', 'en': 'Construction'},
+    'healthcare': {'hi': 'स्वास्थ्य सेवा (Healthcare)', 'en': 'Healthcare'},
+    'it_tech': {'hi': 'IT और टेक्नोलॉजी', 'en': 'IT & Technology'},
+    'other': {'hi': 'अन्य', 'en': 'Other'},
+
+    // States
+    'rajasthan': {'hi': 'राजस्थान', 'en': 'Rajasthan'},
+    'maharashtra': {'hi': 'महाराष्ट्र', 'en': 'Maharashtra'},
+    'delhi': {'hi': 'दिल्ली', 'en': 'Delhi'},
+    'gujarat': {'hi': 'गुजरात', 'en': 'Gujarat'},
+    'haryana': {'hi': 'हरियाणा', 'en': 'Haryana'},
+    'uttar_pradesh': {'hi': 'उत्तर प्रदेश', 'en': 'Uttar Pradesh'},
+
+    // Home
+    'home_greeting': {'hi': 'नमस्ते', 'en': 'Hello'},
+    'upload_notice': {'hi': 'नोटिस अपलोड करें', 'en': 'Upload Notice'},
+    'create_document': {'hi': 'दस्तावेज़ बनाएं', 'en': 'Create Document'},
+    'ask_ai': {'hi': 'AI से पूछें', 'en': 'Ask AI'},
+    'compliance_calendar': {'hi': 'Compliance Calendar', 'en': 'Compliance Calendar'},
+    'recent_activity': {'hi': 'हाल की गतिविधि', 'en': 'Recent Activity'},
+    'upcoming_deadlines': {'hi': 'आने वाली deadlines', 'en': 'Upcoming Deadlines'},
+    'legal_health_score': {'hi': 'कानूनी स्वास्थ्य स्कोर', 'en': 'Legal Health Score'},
+
+    // AI Assistant
+    'ai_assistant_title': {'hi': 'AI सहायक', 'en': 'AI Assistant'},
+    'ask_anything': {'hi': 'कुछ भी पूछें...', 'en': 'Ask anything...'},
+    'ai_thinking': {'hi': 'AI सोच रहा है...', 'en': 'AI is thinking...'},
+    'ai_disclaimer': {'hi': '⚠️ यह कानूनी जानकारी है, कानूनी सलाह नहीं। जटिल मामलों में वकील से परामर्श लें।', 'en': '⚠️ This is legal information, not legal advice. Consult a lawyer for complex matters.'},
+    'questions_used': {'hi': 'प्रश्न उपयोग किए', 'en': 'questions used'},
+    'upgrade_for_more': {'hi': 'Saathi Plan लें और असीमित प्रश्न पूछें', 'en': 'Upgrade to Saathi Plan for more questions'},
+
+    // Document Analyzer
+    'doc_analyzer_title': {'hi': 'दस्तावेज़ विश्लेषक', 'en': 'Document Analyzer'},
+    'upload_doc': {'hi': 'दस्तावेज़ अपलोड करें', 'en': 'Upload Document'},
+    'doc_upload_hint': {'hi': 'अपना नोटिस या दस्तावेज़ यहाँ अपलोड करें', 'en': 'Upload your notice or document here'},
+    'choose_files': {'hi': 'Files से चुनें', 'en': 'Choose from Files'},
+    'scan_camera': {'hi': 'Camera से स्कैन करें', 'en': 'Scan with Camera'},
+    'choose_gallery': {'hi': 'Gallery से चुनें', 'en': 'Choose from Gallery'},
+    'analyzing': {'hi': 'विश्लेषण हो रहा है...', 'en': 'Analyzing...'},
+    'reading_doc': {'hi': 'दस्तावेज़ पढ़ रहे हैं', 'en': 'Reading document'},
+    'understanding_doc': {'hi': 'समझ रहे हैं', 'en': 'Understanding'},
+    'preparing_answer': {'hi': 'जवाब तैयार कर रहे हैं', 'en': 'Preparing answer'},
+    'what_is_this': {'hi': 'यह नोटिस क्या है?', 'en': 'What is this notice?'},
+    'key_points': {'hi': 'मुख्य बातें:', 'en': 'Key Points:'},
+    'what_to_do': {'hi': 'आपको क्या करना चाहिए?', 'en': 'What should you do?'},
+    'risk_level': {'hi': 'जोखिम स्तर', 'en': 'Risk Level'},
+    'draft_response': {'hi': 'जवाब तैयार करें', 'en': 'Draft Response'},
+    'ask_ai_more': {'hi': 'AI से और पूछें', 'en': 'Ask AI More'},
+
+    // Document Generator
+    'doc_gen_title': {'hi': 'दस्तावेज़ जनरेटर', 'en': 'Document Generator'},
+    'select_template': {'hi': 'टेम्पलेट चुनें', 'en': 'Select Template'},
+    'generate_doc': {'hi': 'दस्तावेज़ बनाएं', 'en': 'Generate Document'},
+    'preview': {'hi': 'प्रीव्यू', 'en': 'Preview'},
+    'download_pdf': {'hi': 'PDF डाउनलोड करें', 'en': 'Download PDF'},
+    'enhance_ai': {'hi': 'AI से बेहतर बनाएं', 'en': 'Enhance with AI'},
+
+    // Compliance Tracker
+    'compliance_title': {'hi': 'अनुपालन ट्रैकर', 'en': 'Compliance Tracker'},
+    'mark_done': {'hi': 'पूरा हुआ', 'en': 'Mark Done'},
+    'pending': {'hi': 'बाकी है', 'en': 'Pending'},
+    'overdue': {'hi': 'देर हो गई', 'en': 'Overdue'},
+    'add_custom': {'hi': 'नया आइटम जोड़ें', 'en': 'Add Custom Item'},
+    'gst_compliance': {'hi': 'GST अनुपालन', 'en': 'GST Compliance'},
+    'labour_compliance': {'hi': 'श्रम अनुपालन', 'en': 'Labour Compliance'},
+    'tax_compliance': {'hi': 'कर अनुपालन', 'en': 'Tax Compliance'},
+    'license_renewals': {'hi': 'लाइसेंस नवीनीकरण', 'en': 'License Renewals'},
+    'days_left': {'hi': 'दिन बचे', 'en': 'days left'},
+    'due_today': {'hi': 'आज due है', 'en': 'Due today'},
+
+    // Legal Notice Responder
+    'notice_responder_title': {'hi': 'नोटिस जवाब तैयार करें', 'en': 'Draft Notice Response'},
+    'your_position': {'hi': 'आपका पक्ष', 'en': 'Your Position'},
+    'agree': {'hi': 'मैं सहमत हूं', 'en': 'I agree'},
+    'disagree': {'hi': 'मैं असहमत हूं', 'en': 'I disagree'},
+    'partially_agree': {'hi': 'आंशिक सहमति', 'en': 'Partially agree'},
+    'key_facts': {'hi': 'मुख्य तथ्य', 'en': 'Key Facts'},
+    'supporting_docs': {'hi': 'सहायक दस्तावेज़', 'en': 'Supporting Documents'},
+    'draft_letter': {'hi': 'मसौदा पत्र', 'en': 'Draft Letter'},
+    'lawyer_review': {'hi': 'वकील से Review करवाएं', 'en': 'Get Lawyer Review'},
+
+    // Subscription
+    'subscription_title': {'hi': 'प्लान चुनें', 'en': 'Choose Plan'},
+    'free_plan': {'hi': 'मुफ्त', 'en': 'Free'},
+    'saathi_plan': {'hi': 'साथी', 'en': 'Saathi'},
+    'vakil_plan': {'hi': 'वकील', 'en': 'Vakil'},
+    'most_popular': {'hi': 'सबसे लोकप्रिय', 'en': 'Most Popular'},
+    'start_free': {'hi': 'मुफ्त शुरू करें', 'en': 'Start Free'},
+    'upgrade_now': {'hi': 'अभी अपग्रेड करें', 'en': 'Upgrade Now'},
+    'single_notice': {'hi': '₹499 - एकल नोटिस जवाब', 'en': '₹499 - Single Notice Response'},
+    'subscription_required': {'hi': 'यह सुविधा Saathi Plan में उपलब्ध है', 'en': 'This feature requires Saathi Plan'},
+
+    // Profile
+    'profile_title': {'hi': 'प्रोफाइल', 'en': 'Profile'},
+    'settings': {'hi': 'सेटिंग्स', 'en': 'Settings'},
+    'language': {'hi': 'भाषा', 'en': 'Language'},
+    'notifications': {'hi': 'सूचनाएं', 'en': 'Notifications'},
+    'help_support': {'hi': 'सहायता', 'en': 'Help & Support'},
+    'logout': {'hi': 'लॉग आउट', 'en': 'Logout'},
+    'terms': {'hi': 'नियम और शर्तें', 'en': 'Terms of Service'},
+    'privacy': {'hi': 'गोपनीयता नीति', 'en': 'Privacy Policy'},
+    'about': {'hi': 'ऐप के बारे में', 'en': 'About App'},
+
+    // My Documents
+    'my_docs_title': {'hi': 'मेरे दस्तावेज़', 'en': 'My Documents'},
+    'no_docs': {'hi': 'अभी तक कोई दस्तावेज़ नहीं', 'en': 'No documents yet'},
+    'search_docs': {'hi': 'दस्तावेज़ खोजें...', 'en': 'Search documents...'},
+    'all': {'hi': 'सभी', 'en': 'All'},
+    'notices': {'hi': 'नोटिस', 'en': 'Notices'},
+    'agreements': {'hi': 'अनुबंध', 'en': 'Agreements'},
+    'generated': {'hi': 'बनाए गए', 'en': 'Generated'},
+    'uploaded': {'hi': 'अपलोड किए', 'en': 'Uploaded'},
+
+    // Errors & Status
+    'no_internet': {'hi': 'इंटरनेट कनेक्शन नहीं है', 'en': 'No internet connection'},
+    'ai_busy': {'hi': 'AI व्यस्त है, कृपया दोबारा कोशिश करें', 'en': 'AI is busy, please try again'},
+    'file_too_large': {'hi': 'फ़ाइल 10MB से छोटी होनी चाहिए', 'en': 'File must be smaller than 10MB'},
+    'session_expired': {'hi': 'Session expire हो गई है', 'en': 'Session has expired'},
+    'payment_failed': {'hi': 'भुगतान विफल हुआ', 'en': 'Payment failed'},
+
+    // Quick Questions for AI
+    'q1': {'hi': 'GST नोटिस आया, क्या करूं?', 'en': 'Received GST notice, what to do?'},
+    'q2': {'hi': 'किराया विवाद में क्या अधिकार हैं?', 'en': 'What are my rights in rent dispute?'},
+    'q3': {'hi': '60 दिन से पेमेंट नहीं मिला?', 'en': 'Payment pending for 60 days?'},
+    'q4': {'hi': 'Employee को कैसे terminate करें?', 'en': 'How to terminate an employee?'},
+    'q5': {'hi': 'Shop Act renewal कैसे होता है?', 'en': 'How to renew Shop Act?'},
+    'q6': {'hi': 'FSSAI license लेने की प्रक्रिया?', 'en': 'FSSAI license process?'},
+    'q7': {'hi': 'Labour law में क्या rights हैं?', 'en': 'What are Labour law rights?'},
+    'q8': {'hi': 'GST return late हो गया, penalty क्या?', 'en': 'GST return late, what is penalty?'},
+  };
+}
