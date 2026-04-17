@@ -6,13 +6,14 @@ colorTo: yellow
 sdk: static
 pinned: false
 ---
+
 # VakilAI — Your Business Lawyer at ₹999/month
 
 AI-powered legal assistant for India's 73 million MSMEs.
 
 ## 🚀 Quick Start
 
-`ash
+```bash
 # 1. Install Flutter 3.19+
 # 2. Clone this repo
 cd vakilai
@@ -26,11 +27,11 @@ flutter pub get
 
 # 5. Run the app
 flutter run
-`
+```
 
 ## 📁 Project Structure
 
-`
+```
 lib/
 ├── app/                  # App setup (router, theme, material app)
 ├── core/
@@ -56,7 +57,7 @@ lib/
     ├── widgets/          # Reusable UI components
     ├── extensions/       # Dart extensions
     └── providers/        # Global Riverpod providers
-`
+```
 
 ## 🔧 Configuration
 
@@ -67,16 +68,16 @@ lib/
 4. Download and add config files
 
 ### Razorpay
-Update lib/core/constants/api_constants.dart:
-`dart
+Update `lib/core/constants/api_constants.dart`:
+```dart
 static const String razorpayKey = 'rzp_live_YOUR_KEY';
-`
+```
 
 ### Backend API
-Update lib/core/constants/api_constants.dart:
-`dart
+Update `lib/core/constants/api_constants.dart`:
+```dart
 static const String baseUrl = 'https://your-api.vakilai.in/v1';
-`
+```
 
 ## 📦 Key Dependencies
 
@@ -95,7 +96,7 @@ static const String baseUrl = 'https://your-api.vakilai.in/v1';
 ## 🎨 Design System
 
 - **Primary**: #0A1628 (Deep Navy)
-- **Accent**: #F59E0B (Saffron Gold)  
+- **Accent**: #F59E0B (Saffron Gold)
 - **Success**: #10B981
 - **Error**: #EF4444
 - **Font**: Syne (display) + DM Sans (body)
